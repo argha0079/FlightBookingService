@@ -4,5 +4,6 @@ config();
 
 export const {
     PORT,
-    DATABASE_URL
+    DATABASE_URL,
+    FLIGHT_SERVICE_URL
 } = process.env;

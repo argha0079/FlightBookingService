@@ -23,10 +23,12 @@ model Booking {
   flightId  Int
   userId    Int
   noOfSeats Int           @default(1)
+  totalCost Int
   status    BookingStatus @default(IN_PROCESS)
   createdAt DateTime      @default(now())
   updatedAt DateTime      @updatedAt
 
   @@index([flightId])
   @@index([userId])
+  @@map("bookings")
 }

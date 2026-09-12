@@ -22,6 +22,7 @@ model Booking {
   id        Int           @id @default(autoincrement())
   flightId  Int
   userId    Int
+  noOfSeats Int           @default(1)
   status    BookingStatus @default(IN_PROCESS)
   createdAt DateTime      @default(now())
   updatedAt DateTime      @updatedAt

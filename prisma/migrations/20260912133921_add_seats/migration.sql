@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Booking" ADD COLUMN     "noOfSeats" INTEGER NOT NULL DEFAULT 1;
